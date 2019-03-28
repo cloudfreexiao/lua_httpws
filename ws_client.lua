@@ -18,7 +18,7 @@ local function connect()
         num = num + 1
     end)
     
-    local url = "ws://echo.websocket.org"
+    local url = "wss://echo.websocket.org"
     print("Connecting to " .. url)
     return ws_client.ws:connect(url)
 end

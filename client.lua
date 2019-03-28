@@ -12,23 +12,14 @@ local ui = require "simpleui"
 local ws_client = require "ws_client"
 local httpc = require "http.httpc"
 
--- print("begin https test")
--- local code, res = httpc.request('GET', 'https://baidu.com')
--- print("https test:" .. code .. inspect(res))
+ print("begin https test")
+local code, res = httpc.request('GET', 'https://baidu.com')
+ print("https test:" .. code .. inspect(res))
 
--- print("begin http test")
--- local code, res = httpc.request('GET', 'http://localhost:15672', "/cli/rabbitmqadmin")
--- print("http test:" .. code .. inspect(res))
+ print("begin http test")
+local code, res = httpc.request('GET', 'http://localhost:15672', "/cli/rabbitmqadmin")
+ print("http test:" .. inspect(res))
 
--- local sep = '\r\n'
--- local buf = "dsgdgf" .."\r\n" .. "ggg1111"
--- print('bb:', buf)
-
--- while not buf:find(sep, 1, true) do
--- end
--- local b, e, c = buf:find(sep, 1, true)
--- print('ff:', b, e, buf:sub(1, b))
--- print('cc:', c)
 
 assert(ws_client.connect())
 ws_client.loop()
