@@ -1,0 +1,15 @@
+# project termbox (1.0.0) configured on Wed Mar 27 09:59:12 2019 by
+# waf 1.8.0 (abi 98, python 20705f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/root/workspace/AntServer/luaclient/lualib-src/termfx/termbox
+----------------------------------------
+Setting out to
+/root/workspace/AntServer/luaclient/lualib-src/termfx/termbox/build
+----------------------------------------
+Checking for 'gcc' (C compiler)
+find program=['gcc', 'cc'] paths=['/root/.cargo/bin', '/usr/local/go/bin/', '/usr/local/openresty/nginx/sbin/', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/root/bin'] var='CC' -> ['/usr/bin/gcc']
+find program=['ar'] paths=['/root/.cargo/bin', '/usr/local/go/bin/', '/usr/local/openresty/nginx/sbin/', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/root/bin'] var='AR' -> ['/usr/bin/ar']
+/usr/bin/gcc

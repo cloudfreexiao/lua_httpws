@@ -1,0 +1,9 @@
+.vscode
+
+.DS_Store
+*..DS_Store
+*.so
+*.o
+*.a
+lua
+luac
