@@ -5,5 +5,4 @@
 *.so
 *.o
 *.a
-lua
 luac
