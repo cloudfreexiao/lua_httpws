@@ -7,8 +7,8 @@ LUA_CLIB_PATH ?= luaclib/
 TERMFX_INC ?= lualib-src/termfx
 LSOCKET_INC ?= lualib-src/lsocket
 
-TLS_LIB=/usr/local/ssl/lib
-TLS_INC=/usr/local/ssl/include
+TLS_LIB=/usr/local/opt/openssl/lib
+TLS_INC=/usr/local/opt/openssl/include
 
 TERMFX_SO_NAME = termfx.so
 LSOCKET_NAME = lsocket.so
@@ -22,10 +22,9 @@ all: luabin $(TLS_SO) $(TERMFX_SO) \
 
 #####################################################
 
+OS = linux
 ifeq ($(PLAT),macosx)
 	OS = Darwin
-else
-	OS = linux
 endif
 
 luabin:
